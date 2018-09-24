@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Загребельный](https://up.htmlacademy.ru/adaptive/15/user/203950).
-* Наставник: `Неизвестно`.
+* Наставник: ``.
 
 ---
 
