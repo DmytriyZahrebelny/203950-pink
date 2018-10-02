@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Photo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav">
+          <a class="nav" href="#">PINK</a>
+        </div>
+        <div class="nav__button-open">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">PINK</a>
+            <div class="nav__button-close">
+              <span class="nav__cross-element"></span>
+              <span class="nav__cross-element"></span>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+    <main>
+      <section class="suggestion">
+        <p class="suggestion__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+      </section>
+      <section class="form">
+        <form class="form__data" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__name">
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
+            <label for="surname">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя *">
+            <label for="surname">Отчество</label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="checkbox">
+            <fieldset>
+              <legend>Ваши безбашенные достижения в путешествии</legend>
+              <div class="checkbox__input">
+                <input id="1" type="checkbox">
+                <label for="1">Сделал селфи с акулой</label>
+                <input id="2" type="checkbox">
+                <label for="2">Обгорел на пляже</label>
+                <input id="3" type="checkbox">
+                <label for="3">Видел Чака Норриса</label>
+                <input id="4" type="checkbox">
+                <label for="4">Накупил сувениров</label>
+                <input id="5" type="checkbox">
+                <label for="5">Удержал башню</label>
+                <input id="6" type="checkbox">
+                <label for="6">Разгромил отель</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="contact">
+            <fieldset>
+              <legend>Контактная информация</legend>
+              <label for="phone">Номер телефона</label>
+              <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <label for="mail">Адрес почты</label>
+              <input type="email" id="mail" name="mail" placeholder="Введите почту *">
+            </fieldset>
+          </div>
+          <div class="radio">
+            <fieldset>
+              <legend>С каким приложением путешествовали?</legend>
+              <input id="ios" type="radio" name="app" value="ios">
+              <label for="ios">Pink для iOS</label>
+              <input id="android" type="radio" name="app" value="android">
+              <label for="android">Pink на Android</label>
+              <input id="windows" type="radio" name="app" value="windows">
+              <label for="windows">Windows Phone</label>
+            </fieldset>
+          </div>
+          <div class="review">
+            <fieldset>
+              <legend>Опишите свои эмоции</legend>
+              <textarea name="name" rows="8" cols="8">
+                Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </fieldset>
+          </div>
+          <div class="form__input">
+            <input type="button" value="Отправить форму">
+            <span class="form__hint">* -- Отправить форму</span>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" href="#">logo</a>
+      <ul class="footer__social">
+        <li class="footer__link  footer__link--twiter">twiter</li>
+        <li class="footer__link  footer__link--facebook">facebook</li>
+        <li class="footer__link  footer__link--youtube">youtube</li>
+      </ul>
+      <a class="footer__producer" href="#">Разработано</a>
+    </footer>
+  </body>
+</html>
