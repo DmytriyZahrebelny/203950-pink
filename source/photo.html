@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Photo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav">
+          <a class="nav" href="#">PINK</a>
+        </div>
+        <div class="nav__button-open">
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+          <span class="nav__bar"></span>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">PINK</a>
+            <div class="nav__button-close">
+              <span class="nav__cross-element"></span>
+              <span class="nav__cross-element"></span>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title">Фотографии пользователей</h1>
+    </header>
+    <main>
+      <section class="photo">
+        <p class="photo__suggestion">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photo__day">
+          <img class="photo__day-img" src="http://placehold.it/150x100" alt="">
+        </div>
+        <div class="photo__user">
+          <span class="photo__user-name"><b>Анна</b> (5 минут назад)</span>
+          <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <span class="photo__like">Нравится: 215</span>
+        </div>
+      </section>
+      <section class="user-work">
+        <div class="user-work__box">
+          <img class="user-work__img" src="http://placehold.it/150x100" alt="">
+          <span class="user-work__user-name"><b>Левон</b> (5 часов назад)</span>
+          <p class="user-work__text">Левон (5 часов назад) Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <span class="user-work__like">Нравится: 356</span>
+        </div>
+        <div class="user-work__box">
+          <img class="user-work__img" src="http://placehold.it/150x100" alt="">
+          <span class="user-work__user-name"><b>Антон</b> (12 часов назад)</span>
+          <p class="user-work__text">Соседи будут рады!</p>
+          <span class="user-work__like">Нравится: 666</span>
+        </div>
+        <div class="user-work__box">
+          <img class="user-work__img" src="http://placehold.it/150x100" alt="">
+          <span class="user-work__user-name"><b>Борис</b> (12 часов назад)</span>
+          <p class="user-work__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <span class="user-work__like">Нравится: 215</span>
+        </div>
+        <div class="user-work__box">
+          <img class="user-work__img" src="http://placehold.it/150x100" alt="">
+          <span class="user-work__user-name"><b>Сергей</b> (25 часов назад)</span>
+          <p class="user-work__text">Самая кубанская в мире!</p>
+          <span class="user-work__like">Нравится: 4</span>
+        </div>
+        <div class="user-work__box">
+          <img class="user-work__img" src="http://placehold.it/150x100" alt="">
+          <span class="user-work__user-name"><b>Максим</b> (40 часов назад)</span>
+          <p class="user-work__text">Где снег-то?</p>
+          <span class="user-work__like">Нравится: 150</span>
+        </div>
+        <div class="user-work__box">
+          <img class="user-work__img" src="http://placehold.it/150x100" alt="">
+          <span class="user-work__user-name"><b>Надежда</b> (45 часов назад)</span>
+          <p class="user-work__text">Всем GM и взаимные лайки!</p>
+          <span class="user-work__like">Нравится: 2560</span>
+        </div>
+      </section>
+      <section class="filter">
+        <h2 class="filter__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <form class="filter__form" action="index.html" method="post">
+          <div class="filter__img">
+            <img src="http://placehold.it/150x100" alt="">
+          </div>
+          <div class="filter__kinds">
+            <div class="filter__size">
+              <input type="radio" name="filter" value="size" class="filter__size-icon">
+              <span class="filter__size-line">size line</span>
+            </div>
+            <div class="filter__filling">
+              <input type="radio" name="filter" value="filling" class="filter__filling-icon">
+              <span class="filter__filling-line">filling line</span>
+            </div>
+            <div class="filter__color">
+              <input type="radio" name="filter" value="color" class="filter__color-icon">
+              <span class="filter__color-line">color line</span>
+            </div>
+          </div>
+          <div class="filter__inputs">
+            <input class="filter__input" type="button" name="Запостить" value="">
+            <input class="filter__input" type="button" name="Отмена" value="">
+          </div>
+        </form>
+      </section>
+      <footer class="footer">
+        <a class="footer__logo" href="#">logo</a>
+        <ul class="footer__social">
+          <li class="footer__link  footer__link--twiter">twiter</li>
+          <li class="footer__link  footer__link--facebook">facebook</li>
+          <li class="footer__link  footer__link--youtube">youtube</li>
+        </ul>
+        <a class="footer__producer" href="#">Разработано</a>
+      </footer>
+    </main>
+  </body>
+</html>
