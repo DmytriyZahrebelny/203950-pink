@@ -1,0 +1,352 @@
+.app {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.app__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 200;
+  color: #283645;
+  text-align: center;
+}
+
+.app__title--question {
+  margin: 40px 0 27px 0;
+}
+
+.app__description {
+  width: 280px;
+  padding: 81px 20px 287px 20px;
+  margin-top: 32px;
+  background-color: #f2f2f2;
+  background-image: url(../../img/iphone-screen-mobile@1x.png), url(../../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: center 475px, 0 -69px;
+}
+
+.app__box {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.app__description-title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.app__text {
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  letter-spacing: 0.3px;
+  color: #283645;
+}
+
+.app__slide {
+  padding: 43px 20px 0 20px;
+  text-align: center;
+}
+
+.app__user-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.app__user-data {
+  display: none;
+}
+
+.app__user-review {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.app__inputs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 132px 45px 132px;
+  margin-top: 37px;
+}
+
+.app__input {
+  display: none;
+}
+
+.app__slider-toggle {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.app__efect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .app {
+    width: 660px;
+  }
+
+  .app__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .app__title--question {
+    margin: 49px 0 0 0;
+  }
+
+  .app__title--answer {
+    width: 400px;
+    margin: 0 0 0 130px;
+  }
+
+  .app__box {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+
+  .app__description {
+    width: 310px;
+    padding: 89px 20px 7px 330px;
+    background-image: url(../../img/iphone-screen-3-tablet@1x.png), url(../../img/bg-triangle-white.svg);
+    background-position: 20px 18px, 0 -27px;
+  }
+
+  .app__text-carry {
+    display: block;
+  }
+
+  .app__efect {
+    display: flex;
+    padding: 0 20px;
+  }
+
+  .app__clock {
+    width: 310px;
+  }
+
+  .app__efect-box {
+    width: 310px;
+  }
+
+  .app__efect-title {
+    width: 180px;
+    margin: 96px 0 0 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .app__text--efect {
+    margin: 9px 0 11px 0;
+    width: 300px;
+  }
+
+  .app__link {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+    color: #d22856;
+  }
+
+  .app__slide {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 66px 20px 0 20px;
+  }
+
+  .app__user-name {
+    width: 100%;
+    margin: 16px 0 4px 0;
+    font-size: 20px;
+  }
+
+  .app__user-data {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+    color: #283645;
+  }
+
+  .app__user-review {
+    font-size: 18px;
+    order: -1;
+  }
+
+  .app__inputs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 301px 24px 301px;
+    margin-top: 37px;
+  }
+
+  .app__slider-toggle {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    width: 1200px;
+  }
+
+  .app__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .app__title--question {
+    margin: 65px 0 0 0;
+  }
+
+  .app__title--answer {
+    width: 420px;
+    margin: 0 0 80px 390px;
+  }
+
+  .app__description {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+    padding: 0 120px 14px 120px;
+    background-image: none, url(../../img/bg-triangle-white.svg);
+    background-position: 0 0;
+  }
+
+  .app__box {
+    width: 236px;
+    padding-top: 360px;
+    margin-top: -5px;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+
+  .app__box--first {
+    background-image: url(../../img/iphone-screen-1-desktop@1x.png);
+    background-position: -29px 2px;
+  }
+
+  .app__box--second {
+    background-image: url(../../img/iphone-screen-2-desktop@1x.png);
+    background-position: -25px 2px;
+  }
+
+  .app__box--third {
+    background-image: url(../../img/iphone-screen-3-desktop@1x.png);
+    background-position: -25px 2px;
+  }
+
+  .app__description-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .app__text {
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .app__text-carry {
+    display: inline;
+  }
+
+  .app__efect {
+    padding: 0 120px 61px 120px;
+    background-color: #f2f2f2;
+  }
+
+  .app__clock {
+    width: 376px;
+  }
+
+  .app__efect-box {
+    width: 530px;
+  }
+
+  .app__efect-title {
+    width: 300px;
+    margin: 90px 0 0 0;
+  }
+
+  .app__text--efect {
+    margin: 22px 0 31px 0;
+    width: 530px;
+    letter-spacing: 0.4px;
+  }
+
+  .app__text--carry-desktop {
+    display: block;
+  }
+
+  .app__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .app__slide {
+    position: relative;
+    padding: 66px 20px 40px 20px;
+    background-image: url(../../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 563px 72px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 214px;
+      left: 130px;
+      width: 22px;
+      height: 40px;
+      background-image: url(../../img/icon-review-arrow-left.svg);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 214px;
+      right: 130px;
+      width: 22px;
+      height: 40px;
+      background-image: url(../../img/icon-review-arrow-right.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .app__user-name {
+    margin: 17px 0 4px 0;
+    font-size: 24px;
+  }
+
+  .app__user-data {
+    font-size: 18px;
+  }
+
+  .app__user-review {
+    width: 690px;
+    padding: 103px 235px 0 235px;
+    line-height: 30px;
+  }
+
+  .app__inputs {
+    display: none;
+  }
+}

@@ -1,7 +1,10 @@
-body {
-  background: yellow;
-}
+@import "global/font.scss";
+@import "sections/body.scss";
+@import "sections/header.scss";
+@import "sections/nav.scss";
+@import "sections/app.scss";
+@import "sections/rates.scss";
+@import "sections/contact.scss";
+@import "sections/map.scss";
+@import "sections/footer.scss";
 
-p {
-  color: #fff;
-}

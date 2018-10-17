@@ -1,0 +1,159 @@
+.nav {
+  width: 320px;
+}
+
+.nav__close {
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  padding: 0 20px;
+  margin-bottom: 396px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav__logo-link {
+  display: block;
+  margin-top: 21px;
+  text-decoration: none;
+}
+
+.nav__button-open {
+  margin-top: 21px;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url(../../img/icon-menu-burger.svg);
+  background-repeat: no-repeat;
+}
+
+.nav__list {
+  display: none;
+  position: relative;
+  top: -259px;
+  padding: 0;
+  margin: 0 0 136px 0;
+  background-color: #283645;
+  list-style: none;
+}
+
+.nav__button-close {
+  margin-top: 21px;
+  width: 43px;
+  height: 24px;
+  cursor: pointer;
+  background-image: url(../../img/icon-menu-cross.svg);
+  background-repeat: no-repeat;
+}
+
+.nav__item {
+  display: block;
+  padding: 17px 0 13px 0;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
+}
+
+.nav__item--main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  border-top: none;
+}
+
+.nav__img {
+  margin: 21px 0 15px 0;
+}
+
+.nav__link {
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (min-width: 660px) {
+  .nav {
+    width: 660px;
+  }
+
+  .nav__logo-link {
+    margin-top: 26px;
+  }
+
+  .nav__button-open {
+    margin-top: 44px;
+    background-image: url(../../img/icon-menu-burger.svg);
+  }
+
+  .nav__close {
+    min-height: 110px;
+    margin-bottom: 93px;
+  }
+
+  .nav__list {
+    top: -254px;
+    margin: 0 0 0 0;
+  }
+
+  .nav__img {
+    margin: 28px 0 30px 0;
+  }
+
+  .nav__button-close {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    width: 1200px;
+  }
+
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    display: block;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 130px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav__button-close {
+    display: none;
+  }
+
+  .nav__item {
+    border: none;
+    margin: 44px 83px 11px 0;
+    padding: 0;
+  }
+
+  .nav__item:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  .nav__item--main {
+    margin-top: 27px;
+    margin-right: 172px;
+  }
+
+  .nav__link {
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    font-weight: 200;
+    letter-spacing: 0.1px;
+  }
+
+  .nav__img {
+    margin: 0 0 30px 0;
+  }
+}
