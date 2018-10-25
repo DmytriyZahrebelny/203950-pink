@@ -1,0 +1,93 @@
+.user-work {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.user-work__box {
+  background-color: #f2f2f2;
+}
+
+.user-work__img {
+  display: block;
+}
+
+.user-work__time {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.user-work__user-name {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.user-work__text {
+  margin: 0 0 9px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.user-work__like {
+  padding-left: 32px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 3px;
+}
+
+.user-work__data {
+  padding: 17px 17px 21px;
+  margin: 0 0 21px;
+}
+
+@media (min-width: 660px) {
+  .user-work {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .user-work__box {
+    width: 300px;
+    margin: 0 0 20px 20px;
+  }
+
+  .user-work__data {
+    padding: 24px 27px 23px;
+    margin: 0;
+  }
+
+  .user-work__text {
+    margin: 0;
+    min-height: 58px;
+  }
+
+  .user-work__like {
+    display: block;
+    width: 120px;
+    padding: 1px 130px 0 0;
+    background-position: 228px 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-work {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .user-work__box {
+    margin: 0 0 54px 0;
+  }
+}

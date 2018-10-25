@@ -1,0 +1,212 @@
+.filter {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.filter__title {
+  margin: 41px 0 44px 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.filter__subtitle {
+  display: block;
+}
+
+.filter__img {
+  background-color: #f2f2f2;
+  padding: 20px 22px 41px 18px;
+}
+
+.filter__user-img {
+  display: block;
+}
+
+.filter__kinds {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 55px 75px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.filter__effect {
+  position: relative;
+}
+
+.filter__size-icon {
+  display: block;
+  width: 45px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.filter__size-icon--size {
+  background-image: url("../../img/icon-editor-crop.svg");
+  background-position: -1px -2px;
+}
+
+.filter__size-icon--filling {
+  background-image: url("../../img/icon-editor-fill.svg");
+  background-position: -3px 0;
+}
+
+.filter__size-icon--color {
+  background-image: url("../../img/icon-editor-contrast.svg");
+  background-position: 2px 5px;
+}
+
+.filter__line {
+  position: absolute;
+  top: 83px;
+  left: -18px;
+  width: 240px;
+  height: 2px;
+  font-size: 0;
+  background-color: #283645;
+}
+
+.filter__line--filling,
+.filter__line--color {
+  display: none;
+}
+
+.filter__inputs {
+  padding: 39px 0 28px 18px;
+  background-color: #f2f2f2;
+}
+
+.filter__input {
+  width: 280px;
+  padding: 15px 0;
+  margin: 0 0 13px 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #d22856;
+  background-color: inherit;
+  border: 3px solid #d22856;
+  border-radius: 26px;
+}
+
+@media (min-width: 660px) {
+  .filter {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
+  .filter__title {
+    width: 100%;
+    margin: 46px 0 70px 0;
+    font-size: 18px;
+  }
+
+  .filter__img {
+    background-color: #f2f2f2;
+    padding: 56px 48px 53px 20px;
+  }
+
+  .filter__kinds {
+    flex-wrap: wrap;
+    width: 254px;
+    padding: 56px 38px 239px 0;
+    border-bottom: none;
+  }
+
+  .filter__effect {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter__effect::after {
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: -3px;
+    width: 275px;
+    height: 1px;
+    background-color: #dddfe0;
+  }
+
+  .filter__line {
+    position: static;
+    display: block;
+    width: 201px;
+    height: 1px;
+    margin: 20px 0 0 7px;
+  }
+
+  .filter__inputs {
+    position: absolute;
+    bottom: 24px;
+    right: 33px;
+    width: 260px;
+    height: 135px;
+  }
+
+  .filter__input {
+    width: 259px;
+    margin: 0 0 25px 0;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter {
+    width: 940px;
+    margin-bottom: 28px;
+  }
+
+  .filter__title {
+    width: 940px;
+    margin: 7px 0 65px 0;
+  }
+
+  .filter__img {
+    padding: 57px 89px 58px 80px;
+  }
+
+  .filter__kinds {
+    width: 382px;
+    padding: 56px 89px 243px 0;
+  }
+
+  .filter__effect::after {
+    left: 1px;
+    width: 410px;
+  }
+
+  .filter__size-icon--filling {
+    background-position: 1px 0;
+  }
+
+  .filter__size-icon--color {
+    background-position: 6px 4px;
+  }
+
+  .filter__line {
+    width: 288px;
+    height: 2px;
+    margin: 20px 0 0 48px;
+  }
+
+  .filter__inputs {
+    bottom: 30px;
+    right: 16px;
+    width: 454px;
+    height: 54px;
+  }
+
+  .filter__input {
+    width: 183px;
+    margin: 0 41px 0 0;
+    letter-spacing: 0.5px;
+  }
+}

@@ -20,7 +20,7 @@
   padding: 81px 20px 287px 20px;
   margin-top: 32px;
   background-color: #f2f2f2;
-  background-image: url(../../img/iphone-screen-mobile@1x.png), url(../../img/bg-triangle-white.svg);
+  background-image: url("../../img/iphone-screen-mobile@1x.png"), url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center 475px, 0 -69px;
 }
@@ -116,7 +116,7 @@
   .app__description {
     width: 310px;
     padding: 89px 20px 7px 330px;
-    background-image: url(../../img/iphone-screen-3-tablet@1x.png), url(../../img/bg-triangle-white.svg);
+    background-image: url("../../img/iphone-screen-3-tablet@1x.png"), url("../../img/bg-triangle-white.svg");
     background-position: 20px 18px, 0 -27px;
   }
 
@@ -226,7 +226,7 @@
     justify-content: space-around;
     width: 960px;
     padding: 0 120px 14px 120px;
-    background-image: none, url(../../img/bg-triangle-white.svg);
+    background-image: none, url("../../img/bg-triangle-white.svg");
     background-position: 0 0;
   }
 
@@ -239,17 +239,17 @@
   }
 
   .app__box--first {
-    background-image: url(../../img/iphone-screen-1-desktop@1x.png);
+    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
     background-position: -29px 2px;
   }
 
   .app__box--second {
-    background-image: url(../../img/iphone-screen-2-desktop@1x.png);
+    background-image: url("../../img/iphone-screen-2-desktop@1x.png");
     background-position: -25px 2px;
   }
 
   .app__box--third {
-    background-image: url(../../img/iphone-screen-3-desktop@1x.png);
+    background-image: url("../../img/iphone-screen-3-desktop@1x.png");
     background-position: -25px 2px;
   }
 
@@ -304,7 +304,7 @@
   .app__slide {
     position: relative;
     padding: 66px 20px 40px 20px;
-    background-image: url(../../img/icon-quotes.svg);
+    background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 563px 72px;
 
@@ -315,7 +315,7 @@
       left: 130px;
       width: 22px;
       height: 40px;
-      background-image: url(../../img/icon-review-arrow-left.svg);
+      background-image: url("../../img/icon-review-arrow-left.svg");
       background-repeat: no-repeat;
     }
 
@@ -326,7 +326,7 @@
       right: 130px;
       width: 22px;
       height: 40px;
-      background-image: url(../../img/icon-review-arrow-right.svg);
+      background-image: url("../../img/icon-review-arrow-right.svg");
       background-repeat: no-repeat;
     }
   }

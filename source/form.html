@@ -6,23 +6,31 @@
     <title>HTML Academy: Photo</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header  header--photo">
       <nav class="nav">
-        <div class="nav">
-          <a class="nav" href="#">PINK</a>
-        </div>
-        <div class="nav__button-open">
-          <span class="nav__bar"></span>
-          <span class="nav__bar"></span>
-          <span class="nav__bar"></span>
+        <div class="nav__close  nav__close--photo">
+          <div class="nav__logo">
+            <a class="nav__logo-link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="">
+              </picture>
+            </a>
+          </div>
+          <div class="nav__button-open"></div>
         </div>
         <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">PINK</a>
+          <li class="nav__item  nav__item--main">
+            <a class="nav__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="nav__img" src="img/logo-pink-white-mobile.svg" alt="">
+              </picture>
+            </a>
             <div class="nav__button-close">
-              <span class="nav__cross-element"></span>
-              <span class="nav__cross-element"></span>
             </div>
           </li>
           <li class="nav__item">
@@ -39,7 +47,9 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="header__box">
+        <h1 class="header__ad">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
     <main>
       <section class="suggestion">
@@ -117,6 +127,25 @@
         <li class="footer__link  footer__link--youtube">youtube</li>
       </ul>
       <a class="footer__producer" href="#">Разработано</a>
+    </footer>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="">
+          </picture>
+        </a>
+      </div>
+      <div class="footer__social">
+        <a class="footer__social-link  footer__social-link--twiter" href="#"></a>
+        <a class="footer__social-link  footer__social-link--facebook" href="#"></a>
+        <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
+      </div>
+      <div class="footer__academy">
+        <a class="footer__academy-link" href="#">Разработано</a>
+      </div>
     </footer>
   </body>
 </html>

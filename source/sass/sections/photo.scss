@@ -1,0 +1,160 @@
+.photo {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photo__suggestion {
+  width: 250px;
+  margin: 45px auto 50px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #283645;
+}
+
+.photo__day {
+  position: relative;
+}
+
+.photo__img-text {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  margin: 0;
+  padding: 5px 20px 6px 20px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.photo__day-img {
+  display: block;
+}
+
+.photo__user {
+  padding: 17px 17px 19px;
+  margin: 0 20px 21px;
+  background-color: #f2f2f2;
+}
+
+.photo__user-time {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.photo__user-name {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo__text {
+  margin: 0 0 9px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.photo__like {
+  padding-left: 32px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 3px;
+}
+
+@media (min-width: 660px) {
+  .photo {
+    width: 660px;
+  }
+
+  .photo__suggestion {
+    width: 450px;
+    margin: 93px auto 76px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .photo__day {
+    width: 660px;
+    height: 509px;
+    overflow-x: hidden;
+  }
+
+  .photo__day-img {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -20px;
+    width: 700px;
+    height: 509px;
+  }
+
+  .photo__img-text {
+    top: 57px;
+  }
+
+  .photo__user {
+    position: relative;
+    padding: 23px 27px 17px;
+    margin: 0 20px 49px;
+  }
+
+  .photo__like {
+    position: absolute;
+    top: 24px;
+    right: 19px;
+    padding-right: 40px;
+    background-position: 138px 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo {
+    width: 1200px;
+  }
+
+  .photo__suggestion {
+    width: 640px;
+    margin: 93px auto 87px;
+  }
+
+  .photo__day {
+    width: 1200px;
+    height: 509px;
+  }
+
+  .photo__day-img {
+    position: static;
+    width: 1200px;
+  }
+
+  .photo__img-text {
+    top: 55px;
+    right: 129px;
+  }
+
+  .photo__user {
+    padding: 21px 28px 14px;
+    margin: 0 129px 51px;
+  }
+
+  .photo__like {
+    top: 22px;
+    right: 23px;
+    background-position: 138px 6px;
+  }
+}
