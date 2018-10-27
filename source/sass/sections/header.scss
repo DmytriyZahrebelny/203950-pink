@@ -6,6 +6,9 @@
   background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
   background-position: 0 176px, top;
   background-repeat: no-repeat;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .header--photo {
@@ -13,6 +16,9 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .header__click {
@@ -47,6 +53,15 @@
   text-align: center;
 }
 
+.header__button:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.header__button:active .header__button--text {
+  opacity: 0.3;
+}
+
 .header__button {
   padding: 17px 37px;
   margin-top: 28px;
@@ -58,15 +73,6 @@
   background-color: inherit;
   border: 2px solid #ffffff;
   border-radius: 27px;
-}
-
-.header__button:hover {
-  color: #d22856;
-  background-color: #ffffff;
-}
-
-.header__button:active .header__button--text {
-  opacity: 0.3;
 }
 
 .header__list-app {
@@ -123,6 +129,9 @@
     min-height: 729px;
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-position: -20px 184px, top;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/iphone-hand-tablet@2x.png"), url("../../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .header--photo {
@@ -130,6 +139,9 @@
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: top;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .header--click {
@@ -200,6 +212,9 @@
     min-height: 853px;
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
     background-position: 146px 209px, top;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/iphone-hand-desktop@2x.png"), url("../../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .header--photo {
@@ -207,6 +222,9 @@
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .header__content {
