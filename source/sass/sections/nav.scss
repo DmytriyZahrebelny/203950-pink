@@ -142,7 +142,7 @@
 
   .nav__item {
     border: none;
-    margin: 44px 83px 11px 0;
+    margin: 44px 83px 0 0;
     padding: 0;
   }
 
@@ -156,12 +156,32 @@
   }
 
   .nav__link {
-    padding: 0;
+    padding: 0 0 8px 0;
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
     font-weight: 200;
     letter-spacing: 0.1px;
+  }
+
+  .nav__link--active {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .nav__link--active:hover {
+    border-bottom: 2px solid #d22856;
+  }
+
+  .nav__link--active:active {
+    border-bottom: 2px solid #626d78;
+  }
+
+  .nav__link:hover {
+    color: #d22856;
+  }
+
+  .nav__link:active {
+    color: #626d78;
   }
 
   .nav__img {

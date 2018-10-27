@@ -99,9 +99,19 @@
 
 .rates__inputs {
   display: flex;
+  height: 12px;
   justify-content: space-between;
-  padding: 7px 132px 50px 132px;
+  align-items: center;
+  padding: 4px 132px 47px 132px;
   margin-top: 37px;
+}
+
+.rates__inputs:hover .rates__table-toggle {
+  background-color: #7e868f;
+}
+
+.rates__inputs:active .rates__table-toggle {
+  background-color: #e9ebec;
 }
 
 .rates__table-toggle {
@@ -109,6 +119,14 @@
   width: 6px;
   height: 6px;
   background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.rates__input:checked + .rates__table-toggle {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border: 3px solid #283645;
   border-radius: 50%;
 }
 

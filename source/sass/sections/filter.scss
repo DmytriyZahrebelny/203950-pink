@@ -68,6 +68,26 @@
   background-color: #283645;
 }
 
+.filter__line::after {
+  position: absolute;
+  content: "";
+  left: 52px;
+  top: -7px;
+  width: 12px;
+  height: 12px;
+  background-color: #f2f2f2;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
+
+.filter__line:active::after {
+  background-color: #d22856;
+}
+
+.filter__line--size::after {
+  left: 188px;
+}
+
 .filter__line--filling,
 .filter__line--color {
   display: none;
@@ -91,6 +111,36 @@
   background-color: inherit;
   border: 3px solid #d22856;
   border-radius: 26px;
+}
+
+.filter__input:hover {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.filter__input:active .filter__input-text {
+  opacity: 0.3;
+}
+
+.filter__input--cancel {
+  color: #dddfe0;
+  border: 3px solid #dddfe0;
+}
+
+.filter__input--cancel:hover {
+  color: #b5b9be;
+  border-color: #b5b9be;
+  background-color: inherit;
+}
+
+.filter__input--cancel:active {
+  color: #ffffff;
+  background-color: #b5b9be;
+}
+
+.filter__input--cancel:active .filter__input-text--cancel {
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 @media (min-width: 660px) {
@@ -141,6 +191,22 @@
     width: 201px;
     height: 1px;
     margin: 20px 0 0 7px;
+  }
+
+  .filter__line::after {
+    top: 12px;
+  }
+
+  // .filter__line--size::after {
+  //   left: 52px;
+  // }
+
+  .filter__line--filling::after {
+    left: 80px;
+  }
+
+  .filter__line--color::after {
+    left: 146px;
   }
 
   .filter__inputs {
@@ -195,6 +261,18 @@
     width: 288px;
     height: 2px;
     margin: 20px 0 0 48px;
+  }
+
+  .filter__line--size::after {
+    left: 162px;
+  }
+
+  .filter__line--filling::after {
+    left: 342px;
+  }
+
+  .filter__line--color::after {
+    left: 250px;
   }
 
   .filter__inputs {

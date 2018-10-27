@@ -34,7 +34,7 @@
             </div>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link  nav__link--active" href="#">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Фотографии</a>
@@ -50,7 +50,7 @@
       <div class="header__banner">
         <div class="header__content">
           <h1 class="header__title">Взгляните на жизнь иначе!</h1>
-          <input class="header__button" type="submit" name="download" value="Скачать приложение">
+          <button class="header__button" type="submit"><span class="header__button--text">Скачать приложение</span></button>
           <ul class="header__list-app">
             <li class="header__item">
               <a class="header__link  header__link--apple" href="#">apple</a>
@@ -101,15 +101,12 @@
             <p class="app__user-review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="app__inputs">
-            <label class="app__slider-toggle" for="">
-              <input class="app__input" type="radio" name="app" value="first" checked>
-            </label>
-            <label class="app__slider-toggle" for="">
-              <input class="app__input" type="radio" name="app" value="second">
-            </label>
-            <label class="app__slider-toggle" for="">
-              <input class="app__input" type="radio" name="app" value="third">
-            </label>
+            <input id="first" class="app__input" type="radio" name="app" value="first" checked>
+            <label class="app__slider-toggle" for="first"></label>
+            <input id="second" class="app__input" type="radio" name="app" value="second">
+            <label class="app__slider-toggle" for="second"></label>
+            <input id="third" class="app__input" type="radio" name="app" value="third">
+            <label class="app__slider-toggle" for="third"></label>
           </div>
         </div>
       </section>
@@ -183,15 +180,12 @@
           </ul>
         </div>
         <div class="rates__inputs">
-          <label class="rates__table-toggle" for="">
-            <input class="rates__input" type="radio" name="app" value="first">
-          </label>
-          <label class="rates__table-toggle" for="">
-            <input class="rates__input" type="radio" name="app" value="second" checked>
-          </label>
-          <label class="rates__table-toggle" for="">
-            <input class="rates__input" type="radio" name="app" value="third">
-          </label>
+          <input id="one" class="rates__input" type="radio" name="rates" value="one">
+          <label class="rates__table-toggle" for="one"></label>
+          <input id="2" class="rates__input" type="radio" name="rates" value="two" checked>
+          <label class="rates__table-toggle" for="2"></label>
+          <input id="3" class="rates__input" type="radio" name="rates" value="three">
+          <label class="rates__table-toggle" for="3"></label>
         </div>
       </section>
       <section class="contact">
@@ -204,7 +198,7 @@
           </div>
           <div class="contact__box  contact__box--mail">
             <b class="contact__name">Пишите:</b>
-            <span class="contact__kind  contact__kind--address">mail@htmlacademy.ru</span>
+            <a class="contact__kind  contact__kind--address">mail@htmlacademy.ru</a>
           </div>
           <div class="contact__box  contact__box--address">
             <b class="contact__name">Приезжайте в гости:</b>

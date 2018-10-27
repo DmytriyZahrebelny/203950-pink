@@ -25,6 +25,17 @@
   margin-bottom: 24px;
 }
 
+.contact__kind--address:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contact__kind--address:active {
+  color: #283645;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
 .contact__name {
   font-size: 18px;
 }

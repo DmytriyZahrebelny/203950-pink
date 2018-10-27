@@ -22,7 +22,7 @@
   background-color: #f2f2f2;
   background-image: url("../../img/iphone-screen-mobile@1x.png"), url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: center 475px, 0 -69px;
+  background-position: center 507px, 0 -69px;
 }
 
 .app__box {
@@ -68,13 +68,30 @@
 
 .app__inputs {
   display: flex;
+  height: 12px;
   justify-content: space-between;
-  padding: 0 132px 45px 132px;
-  margin-top: 37px;
+  align-items: center;
+  padding: 20px 132px 42px 132px;
+}
+
+.app__inputs:hover .app__slider-toggle {
+  background-color: #7e868f;
+}
+
+.app__inputs:active .app__slider-toggle {
+  background-color: #e9ebec;
 }
 
 .app__input {
   display: none;
+}
+
+.app__input:checked + .app__slider-toggle {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border: 3px solid #283645;
+  border-radius: 50%;
 }
 
 .app__slider-toggle {
@@ -189,8 +206,7 @@
   .app__inputs {
     display: flex;
     justify-content: space-between;
-    padding: 0 301px 24px 301px;
-    margin-top: 37px;
+    padding: 34px 301px 21px 301px;
   }
 
   .app__slider-toggle {

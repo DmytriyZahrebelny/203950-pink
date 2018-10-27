@@ -15,7 +15,6 @@
   background-position: top;
 }
 
-
 .header__click {
   margin-top: 259px;
 }
@@ -59,6 +58,15 @@
   background-color: inherit;
   border: 2px solid #ffffff;
   border-radius: 27px;
+}
+
+.header__button:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.header__button:active .header__button--text {
+  opacity: 0.3;
 }
 
 .header__list-app {
@@ -155,8 +163,8 @@
   }
 
   .header__ad {
+    width: 475px;
     margin: 69px auto 0 auto;
-    width: 350px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -215,6 +223,7 @@
   }
 
   .header__ad {
+    width: 755px;
     margin: 62px auto 0 auto;
   }
 
