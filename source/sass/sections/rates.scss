@@ -26,6 +26,7 @@
 }
 
 .rates__cell-name {
+  position: relative;
   display: table-cell;
   background-color: #ffffff;
   border-bottom: 2px solid #e5e5e5;
@@ -82,15 +83,19 @@
 }
 
 .rates__icon-yes {
-  display: inline-block;
+  position: absolute;
+  top: 17px;
+  right: 14px;
   width: 31px;
-  height: 21px;
+  height: 23px;
   background-image: url("../../img/icon-yes.svg");
   background-repeat: no-repeat;
 }
 
 .rates__icon-no {
-  display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 18px;
   width: 27px;
   height: 26px;
   background-image: url("../../img/icon-no.svg");
@@ -174,24 +179,13 @@
     color: #283645;
   }
 
-  .rates__cell-name {
-    position: relative;
-  }
-
   .rates__icon-yes {
-    position: absolute;
-    content: "";
-    width: 31px;
-    height: 21px;
-    top: 16px;
+    top: 10px;
     left: 64px;
+    height: 25px;
   }
 
   .rates__icon-no {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 26px;
     top: 10px;
     left: 63px;
   }
@@ -226,8 +220,8 @@
   }
 
   .rates__icon-yes {
-    top: 25px;
-    left: 105px;
+    top: 19px;
+    left: 104px;
   }
 
   .rates__icon-no {
