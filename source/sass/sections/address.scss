@@ -1,0 +1,163 @@
+.address {
+  width: 280px;
+  padding: 33px 20px 26px;
+}
+
+.address__board {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address__title {
+  display: none;
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.address__block {
+  margin: 0 0 17px 0;
+}
+
+.address__text {
+  display: block;
+  padding: 0 0 4px 22px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.address__input {
+  width: 256px;
+  padding: 15px 0 15px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+}
+
+.address__input:hover {
+  border-color: #283645;
+}
+
+.address__input:focus {
+  border-color: #d22856;
+}
+
+@media (min-width: 660px) {
+  .address {
+    order: 3;
+    width: 620px;
+    padding: 53px 20px 26px;
+  }
+
+  .address__board {
+    display: block;
+    padding: 39px 0 0 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .address__title {
+    display: block;
+    padding: 0 22px;
+  }
+
+  .address__block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 25px 0;
+  }
+
+  .address__block::before {
+    position: absolute;
+    content: "";
+    right: 60px;
+    top: 3px;
+    width: 60px;
+    height: 58px;
+    background-color: #e5e5e5;
+  }
+
+  .address__block::after {
+    position: absolute;
+    content: "";
+    right: 60px;
+    top: 2px;
+    width: 60px;
+    height: 59px;
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .address__block--mail {
+    margin-bottom: 23px;
+  }
+
+  .address__block--mail::after {
+    background-image: url("../../img/icon-mail.svg");
+  }
+
+  .address__text {
+    order: 1;
+    padding: 9px 0 4px 77px;
+  }
+
+  .address__input {
+    width: 419px;
+    padding: 15px 60px 15px 17px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .address {
+    width: 940px;
+    padding: 3px 0 26px;
+  }
+
+  .address__board {
+    padding: 34px 57px 13px;
+  }
+
+  .address__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address__input {
+    width: 293px;
+    padding: 16px 58px 13px 19px;
+    margin: 0;
+  }
+
+  .address__block--mail {
+    margin-bottom: 0;
+  }
+
+  .address__block {
+    width: 375px;
+    margin: 0;
+  }
+
+  .address__block::before {
+    right: 3px;
+    top: 2px;
+  }
+
+  .address__block::after {
+    right: 2px;
+    top: 2px;
+  }
+
+  .address__text {
+    padding: 11px 0 0 19px;
+  }
+}

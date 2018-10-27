@@ -1,0 +1,135 @@
+.footer {
+  width: 280px;
+  padding: 0 20px 47px;
+  margin: 0 auto;
+}
+
+.footer--hidden {
+  display: none;
+}
+
+.footer__logo {
+  margin: 41px 0 0 0;
+}
+
+.footer__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  width: 177px;
+  margin: 40px auto 0;
+}
+
+.footer__social-link {
+  display: block;
+  width: 45px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+}
+
+.footer__social-link:hover {
+  border: 3px solid #283645;
+}
+
+.footer__social-link:active {
+  opacity: 0.3;
+}
+
+.footer__social-link--twiter {
+  background-image: url("../../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__social-link--facebook {
+  background-image: url("../../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__social-link--youtube {
+  background-image: url("../../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__academy {
+  margin: 43px 0 0 74px;
+}
+
+.footer__academy-link {
+  position: relative;
+  font-size: 14px;
+  color: #283645;
+  text-decoration: none;
+}
+
+.footer__academy-link::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -42px;
+  width: 27px;
+  height: 34px;
+  background-image: url("../../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 660px) {
+  .footer {
+    display: flex;
+    width: 660px;
+    padding: 37px 0 36px 0;
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .footer__img {
+    display: inline;
+  }
+
+  .footer__social {
+    margin: 2px 0 0 75px;
+  }
+
+  .footer__academy {
+    margin: 17px 0 0 92px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+    padding: 69px 0 36px 0;
+  }
+
+  .footer__logo {
+    padding-left: 130px;
+  }
+
+  .footer__social {
+    margin: 4px 0 0 235px;
+  }
+
+  .footer__academy-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .footer__academy {
+    margin: 19px 0 0 227px;
+  }
+
+  .footer__academy-link::after {
+    top: -1px;
+  }
+}

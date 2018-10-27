@@ -1,0 +1,48 @@
+.suggestion {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.suggestion__title {
+  margin: 46px auto 35px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.suggestion__text {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .suggestion {
+    width: 660px;
+  }
+
+  .suggestion__title {
+    margin: 93px auto 71px;
+    padding: 0 50px;
+    font-size: 18px;
+  }
+
+  .suggestion__text {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .suggestion {
+    width: 1200px;
+  }
+
+  .suggestion__title {
+    margin: 93px auto 64px;
+    padding: 0 200px;
+    font-size: 18px;
+  }
+
+  .suggestion__text {
+    display: inline;
+  }
+}

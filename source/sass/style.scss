@@ -1,7 +1,19 @@
-body {
-  background: yellow;
-}
-
-p {
-  color: #fff;
-}
+@import "global/font.scss";
+@import "sections/body.scss";
+@import "sections/header.scss";
+@import "sections/nav.scss";
+@import "sections/app.scss";
+@import "sections/rates.scss";
+@import "sections/contact.scss";
+@import "sections/map.scss";
+@import "sections/footer.scss";
+@import "sections/photo.scss";
+@import "sections/user-work.scss";
+@import "sections/filter.scss";
+@import "sections/form.scss";
+@import "sections/suggestion.scss";
+@import "sections/user.scss";
+@import "sections/checkbox.scss";
+@import "sections/address.scss";
+@import "sections/radio.scss";
+@import "sections/review.scss";

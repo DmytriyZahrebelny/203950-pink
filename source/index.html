@@ -6,27 +6,35 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="nav">
-        <div class="nav">
-          <a class="nav" href="#">PINK</a>
-        </div>
-        <div class="nav__button-open">
-          <span class="nav__bar"></span>
-          <span class="nav__bar"></span>
-          <span class="nav__bar"></span>
+        <div class="nav__close">
+          <div class="nav__logo">
+            <a class="nav__logo-link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="">
+              </picture>
+            </a>
+          </div>
+          <div class="nav__button-open"></div>
         </div>
         <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">PINK</a>
+          <li class="nav__item  nav__item--main">
+            <a class="nav__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="nav__img" src="img/logo-pink-white-mobile.svg" alt="">
+              </picture>
+            </a>
             <div class="nav__button-close">
-              <span class="nav__cross-element"></span>
-              <span class="nav__cross-element"></span>
             </div>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link  nav__link--active" href="#">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Фотографии</a>
@@ -42,16 +50,16 @@
       <div class="header__banner">
         <div class="header__content">
           <h1 class="header__title">Взгляните на жизнь иначе!</h1>
-          <button class="header__button" type="button" name="download" value="Скачать приложение"></button>
+          <button class="header__button" type="submit"><span class="header__button--text">Скачать приложение</span></button>
           <ul class="header__list-app">
             <li class="header__item">
-              <a class="header__link" href="#">apple</a>
+              <a class="header__link  header__link--apple" href="#">apple</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">android</a>
+              <a class="header__link  header__link--android" href="#">android</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">windows</a>
+              <a class="header__link  header__link--windows" href="#">windows</a>
             </li>
           </ul>
           <span class="header__description-app">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
@@ -63,60 +71,163 @@
         <h2 class="app__title  app__title--question">Устали от серости мегаполиса?</h2>
         <h2 class="app__title  app__title--answer">Нам есть, что вам предложить!</h2>
         <div class="app__description">
-          <div class="app__box">
+          <div class="app__box  app__box--first">
             <b class="app__description-title">Поднимает настроение</b>
             <p class="app__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <div class="app__box">
+          <div class="app__box  app__box--second">
             <b class="app__description-title">Меняет мир вокруг</b>
-            <p class="app__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="app__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="app__text-carry">усилить эффект</span></p>
           </div>
-          <div class="app__box">
+          <div class="app__box  app__box--third">
             <b class="app__description-title">Заводит новых друзей</b>
             <p class="app__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+        <div class="app__efect">
+          <div class="app__clock">
+            <img class="app__clock-img" src="img/icon-timer.svg" alt="">
+          </div>
+          <div class="app__efect-box">
+            <h3 class="app__efect-title">Эффект <span class="app__text-carry">на 24 часа!</span></h3>
+            <p class="app__text  app__text--efect"><span class="app__text--carry-desktop">Британские ученые провели исследования и доказали,</span> что положительный эффект <span class="app__text-carry">от использования приложения длится целые сутки!</span></p>
+            <a class="app__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
         <div class="app__slider">
           <div class="app__slide">
             <b class="app__user-name">Николай Петров</b>
+            <b class="app__user-data">25 лет, водитель трамвая</b>
             <p class="app__user-review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="app__inputs">
+            <input id="first" class="app__input" type="radio" name="app" value="first" checked>
+            <label class="app__slider-toggle" for="first"></label>
+            <input id="second" class="app__input" type="radio" name="app" value="second">
+            <label class="app__slider-toggle" for="second"></label>
+            <input id="third" class="app__input" type="radio" name="app" value="third">
+            <label class="app__slider-toggle" for="third"></label>
           </div>
         </div>
       </section>
       <section class="rates">
-        <ul class="rates__list">
-          <li class="rates__item">
-            <b>Стандарт</b>
-            <span>3,99 USD</span>
-          </li>
-          <li class="rates__item"></li>
-          <li class="rates__item"></li>
-          <li class="rates__item"></li>
-        </ul>
+        <div class="rates__table">
+          <ul class="rates__column  rates__column--cost">
+            <li class="rates__cell-name  rates__cell--hidden"></li>
+            <li class="rates__cell-name  rates__cell-name--header">
+              <b class="rates__cell-title">База</b>
+              <span class="rates__cell-cost">1,99 USD</span>
+            </li>
+            <li class="rates__cell-name  rates__cell-name--header  rates__cell-name--hit">
+              <b class="rates__cell-title">Стандарт</b>
+              <span class="rates__cell-cost">3,99 USD</span>
+            </li>
+            <li class="rates__cell-name  rates__cell-name--header">
+              <b class="rates__cell-title">Анлим</b>
+              <span class="rates__cell-cost">9,99 USD</span>
+            </li>
+          </ul>
+          <ul class="rates__column  rates__column--filter">
+            <li class="rates__cell-name  rates__cell--hidden">
+              <span class="rates__cell-text">Розовый фильтр</span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Розовый фильтр</span>
+              <span class="rates__icon-yes"></span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Розовый фильтр</span>
+              <span class="rates__icon-yes"></span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Розовый фильтр</span>
+              <span class="rates__icon-yes"></span>
+            </li>
+          </ul>
+          <ul class="rates__column  rates__column--smail">
+            <li class="rates__cell-name  rates__cell--hidden">
+              <span class="rates__cell-text">Смайлики</span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Смайлики</span>
+              <span class="rates__icon-no"></span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Смайлики</span>
+              <span class="rates__icon-yes"></span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Смайлики</span>
+              <span class="rates__icon-yes"></span>
+            </li>
+          </ul>
+          <ul class="rates__column  rates__column--comments">
+            <li class="rates__cell-name  rates__cell--hidden">
+              <span class="rates__cell-text">Комментарии</span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Комментарии</span>
+              <span class="rates__icon-no"></span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Комментарии</span>
+              <span class="rates__icon-no"></span>
+            </li>
+            <li class="rates__cell-name">
+              <span class="rates__text">Комментарии</span>
+              <span class="rates__icon-yes"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="rates__inputs">
+          <input id="one" class="rates__input" type="radio" name="rates" value="one">
+          <label class="rates__table-toggle" for="one"></label>
+          <input id="2" class="rates__input" type="radio" name="rates" value="two" checked>
+          <label class="rates__table-toggle" for="2"></label>
+          <input id="3" class="rates__input" type="radio" name="rates" value="three">
+          <label class="rates__table-toggle" for="3"></label>
+        </div>
       </section>
       <section class="contact">
-        <h3 class="contact__title  contact__title--question">Остались вопросы?</h3>
-        <h3 class="contact__title  contact__title--answer">Свяжитесь с нами!</h3>
+        <h4 class="contact__title  contact__title--question">Остались вопросы?</h4>
+        <h4 class="contact__title  contact__title--answer">Свяжитесь с нами!</h4>
         <div class="contact__kinds">
-          <div class="contact__phone">
+          <div class="contact__box  contact__box--phone">
             <b class="contact__name">Звоните:</b>
-            <span class="contact__number">+7 (812) 555-66-66</span>
+            <span class="contact__kind  contact__kind--number">+7 (812) 555-66-66</span>
           </div>
-          <div class="contact__mail">
+          <div class="contact__box  contact__box--mail">
             <b class="contact__name">Пишите:</b>
-            <span class="contact__mail-address">mail@htmlacademy.ru</span>
+            <a class="contact__kind  contact__kind--address">mail@htmlacademy.ru</a>
           </div>
-          <div class="contact__address">
+          <div class="contact__box  contact__box--address">
             <b class="contact__name">Приезжайте в гости:</b>
-            <span class="contact__street">ул. Большая Конюшенная, 19/8</span>
+            <span class="contact__kind  contact__kind--street">ул. Большая Конюшенная, 19/8</span>
           </div>
         </div>
       </section>
       <section class="map">
-        <div class="map__banner">
-
-        </div>
+        <div class="map__banner"></div>
       </section>
     </main>
+    <footer class="footer footer--hidden">
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="">
+          </picture>
+        </a>
+      </div>
+      <div class="footer__social">
+        <a class="footer__social-link  footer__social-link--twiter" href="#"></a>
+        <a class="footer__social-link  footer__social-link--facebook" href="#"></a>
+        <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
+      </div>
+      <div class="footer__academy">
+        <a class="footer__academy-link" href="#">Разработано</a>
+      </div>
+    </footer>
   </body>
 </html>
