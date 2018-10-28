@@ -4,62 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body">
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header">
       <nav class="nav">
         <div class="nav__close">
           <div class="nav__logo">
             <a class="nav__logo-link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg" alt="">
-              </picture>
+              <include src="build/img/icon-logo-header.svg"></include>
             </a>
           </div>
-          <div class="nav__button-open"></div>
+          <div class="nav__button-open">
+            <include src="build/img/icon-menu-burger.svg"></include>
+          </div>
         </div>
         <ul class="nav__list">
           <li class="nav__item  nav__item--main">
-            <a class="nav__link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="nav__img" src="img/logo-pink-white-mobile.svg" alt="">
-              </picture>
+            <a class="nav__link  nav__link--logo" href="#">
+              <include src="build/img/icon-logo-header.svg"></include>
             </a>
             <div class="nav__button-close">
+              <include src="build/img/icon-menu-cross.svg"></include>
             </div>
           </li>
           <li class="nav__item">
             <a class="nav__link  nav__link--active" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Фотографии</a>
+            <a class="nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Конкурс</a>
+            <a class="nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">HTML Academy</a>
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <div class="header__banner">
         <div class="header__content">
           <h1 class="header__title">Взгляните на жизнь иначе!</h1>
-          <button class="header__button" type="submit"><span class="header__button--text">Скачать приложение</span></button>
+          <button class="header__button" type="button"><span class="header__button--text">Скачать приложение</span></button>
           <ul class="header__list-app">
             <li class="header__item">
-              <a class="header__link  header__link--apple" href="#">apple</a>
+              <a class="header__link  header__link--apple" href="https://www.apple.com/ru/">apple</a>
             </li>
             <li class="header__item">
-              <a class="header__link  header__link--android" href="#">android</a>
+              <a class="header__link  header__link--android" href="https://play.google.com/store">android</a>
             </li>
             <li class="header__item">
-              <a class="header__link  header__link--windows" href="#">windows</a>
+              <a class="header__link  header__link--windows" href="https://www.microsoft.com/ru-ru/store/b/home">windows</a>
             </li>
           </ul>
           <span class="header__description-app">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
@@ -86,7 +84,7 @@
         </div>
         <div class="app__efect">
           <div class="app__clock">
-            <img class="app__clock-img" src="img/icon-timer.svg" alt="">
+            <span class="app__number">24</span>
           </div>
           <div class="app__efect-box">
             <h3 class="app__efect-title">Эффект <span class="app__text-carry">на 24 часа!</span></h3>
@@ -108,6 +106,18 @@
             <input id="third" class="app__input" type="radio" name="app" value="third">
             <label class="app__slider-toggle" for="third"></label>
           </div>
+          <div class="app__slider-nav">
+            <span class="app__arrows  app__arrows--left">
+              <svg class="app__arrow" width="21.706px" height="41.719px">
+                <use xlink:href="#icon-review-arrow-left"></use>
+              </svg>
+            </span>
+            <span class="app__arrows  app__arrows--right">
+              <svg class="app__arrow" width="21.706px" height="41.719px">
+                <use xlink:href="#icon-review-arrow-right"></use>
+              </svg>
+            </span>
+          </div>
         </div>
       </section>
       <section class="rates">
@@ -121,6 +131,7 @@
             <li class="rates__cell-name  rates__cell-name--header  rates__cell-name--hit">
               <b class="rates__cell-title">Стандарт</b>
               <span class="rates__cell-cost">3,99 USD</span>
+              <span class="rates__hit-text">ХИТ</span>
             </li>
             <li class="rates__cell-name  rates__cell-name--header">
               <b class="rates__cell-title">Анлим</b>
@@ -133,15 +144,27 @@
             </li>
             <li class="rates__cell-name">
               <span class="rates__text">Розовый фильтр</span>
-              <span class="rates__icon-yes"></span>
+              <span class="rates__icon-yes">
+                <svg class="rates__icon" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
             <li class="rates__cell-name">
               <span class="rates__text">Розовый фильтр</span>
-              <span class="rates__icon-yes"></span>
+              <span class="rates__icon-yes">
+                <svg class="rates__icon" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
             <li class="rates__cell-name">
               <span class="rates__text">Розовый фильтр</span>
-              <span class="rates__icon-yes"></span>
+              <span class="rates__icon-yes">
+                <svg class="rates__icon" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
           </ul>
           <ul class="rates__column  rates__column--smail">
@@ -154,11 +177,19 @@
             </li>
             <li class="rates__cell-name">
               <span class="rates__text">Смайлики</span>
-              <span class="rates__icon-yes"></span>
+              <span class="rates__icon-yes">
+                <svg class="rates__icon" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
             <li class="rates__cell-name">
               <span class="rates__text">Смайлики</span>
-              <span class="rates__icon-yes"></span>
+              <span class="rates__icon-yes">
+                <svg class="rates__icon" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
           </ul>
           <ul class="rates__column  rates__column--comments">
@@ -175,7 +206,11 @@
             </li>
             <li class="rates__cell-name">
               <span class="rates__text">Комментарии</span>
-              <span class="rates__icon-yes"></span>
+              <span class="rates__icon-yes">
+                <svg class="rates__icon" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </span>
             </li>
           </ul>
         </div>
@@ -213,11 +248,7 @@
     <footer class="footer footer--hidden">
       <div class="footer__logo">
         <a class="footer__logo-link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="">
-          </picture>
+          <include src="build/img/icon-logo-footer.svg"></include>
         </a>
       </div>
       <div class="footer__social">
@@ -226,8 +257,14 @@
         <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
       </div>
       <div class="footer__academy">
-        <a class="footer__academy-link" href="#">Разработано</a>
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <svg class="footer__academy-icon" width="49.945px" height="24.007px">
+            <use xlink:href="#icon-logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

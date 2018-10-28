@@ -4,46 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Photo</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body">
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header  header--photo">
       <nav class="nav">
         <div class="nav__close  nav__close--photo">
           <div class="nav__logo">
             <a class="nav__logo-link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg" alt="">
-              </picture>
+              <include src="build/img/icon-logo-header.svg"></include>
             </a>
           </div>
-          <div class="nav__button-open"></div>
+          <div class="nav__button-open">
+            <include src="build/img/icon-menu-burger.svg"></include>
+          </div>
         </div>
         <ul class="nav__list">
           <li class="nav__item  nav__item--main">
-            <a class="nav__link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="nav__img" src="img/logo-pink-white-mobile.svg" alt="">
-              </picture>
+            <a class="nav__link  nav__link--logo" href="#">
+              <include src="build/img/icon-logo-header.svg"></include>
             </a>
             <div class="nav__button-close">
+              <include src="build/img/icon-menu-cross.svg"></include>
             </div>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Фотографии</a>
+            <a class="nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link  nav__link--active" href="#">Конкурс</a>
+            <a class="nav__link  nav__link--active">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">HTML Academy</a>
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -52,10 +50,10 @@
       </div>
     </header>
     <main>
-      <section class="suggestion">
+      <div class="suggestion">
         <p class="suggestion__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="suggestion__text">Пожалуйста, заполните форму ниже:</span></p>
-      </section>
-      <section class="form">
+      </div>
+      <div class="form">
         <form class="form__data" action="https://echo.htmlacademy.ru" method="post">
           <div class="user">
             <div class="user__data  user__data--surname">
@@ -146,16 +144,12 @@
             <span class="form__text"><span class="form__star">*</span> — Oбязательные <span class="form__text-hidden">для заполнения</span> поля</span>
           </div>
         </form>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__logo">
         <a class="footer__logo-link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-            <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="">
-          </picture>
+          <include src="build/img/icon-logo-footer.svg"></include>
         </a>
       </div>
       <div class="footer__social">
@@ -164,7 +158,12 @@
         <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
       </div>
       <div class="footer__academy">
-        <a class="footer__academy-link" href="#">Разработано</a>
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <svg class="footer__academy-icon" width="49.945px" height="24.007px">
+            <use xlink:href="#icon-logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>

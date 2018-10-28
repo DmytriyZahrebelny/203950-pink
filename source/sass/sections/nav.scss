@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   width: 320px;
 }
 
@@ -17,6 +18,8 @@
 
 .nav__logo-link {
   display: block;
+  width: 160px;
+  height: 40px;
   margin-top: 21px;
   text-decoration: none;
 }
@@ -26,14 +29,27 @@
   width: 50px;
   height: 24px;
   cursor: pointer;
-  background-image: url("../../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
+}
+
+.nav__button-icon {
+  fill: #ffffff;
+}
+
+.nav__button-icon:hover {
+  fill: #d22856;
+}
+
+.nav__button-icon:active {
+  opacity: 0.3px;
 }
 
 .nav__list {
   display: none;
-  position: relative;
-  top: -259px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
   padding: 0;
   margin: 0 0 136px 0;
   background-color: #283645;
@@ -41,12 +57,10 @@
 }
 
 .nav__button-close {
-  margin-top: 21px;
+  margin: 18px 14px 0 0;
   width: 43px;
   height: 24px;
   cursor: pointer;
-  background-image: url("../../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
 }
 
 .nav__item {
@@ -78,6 +92,14 @@
   color: #ffffff;
 }
 
+.nav__link--logo {
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin: 20px 0 7px 0;
+  text-decoration: none;
+}
+
 @media (min-width: 660px) {
   .nav {
     width: 660px;
@@ -89,7 +111,14 @@
 
   .nav__button-open {
     margin-top: 44px;
-    background-image: url("../../img/icon-menu-burger.svg");
+  }
+
+  .nav__button-icon:hover {
+    fill: #d22856;
+  }
+
+  .nav__button-icon:active {
+    opacity: 0.3px;
   }
 
   .nav__close {
@@ -102,7 +131,9 @@
   }
 
   .nav__list {
-    top: -254px;
+    top: 0;
+    left: 0;
+    width: 660px;
     margin: 0 0 0 0;
   }
 
@@ -110,8 +141,12 @@
     margin: 28px 0 30px 0;
   }
 
+  .nav__link--logo {
+    margin: 20px 0 49px 0;
+  }
+
   .nav__button-close {
-    margin-top: 45px;
+    margin: 44px 14px 0 0;
   }
 }
 
@@ -131,6 +166,7 @@
   .nav__list {
     position: static;
     display: flex;
+    width: 940px;
     flex-wrap: wrap;
     padding: 0 130px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -156,7 +192,10 @@
   }
 
   .nav__link {
+    width: 146px;
+    height: 76px;
     padding: 0 0 8px 0;
+    margin: 0;
     font-size: 18px;
     line-height: 18px;
     text-transform: none;

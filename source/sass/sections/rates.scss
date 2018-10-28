@@ -4,7 +4,7 @@
   padding-top: 91px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: 0 -69px;
   overflow: hidden;
@@ -26,6 +26,7 @@
 }
 
 .rates__cell-name {
+  position: relative;
   display: table-cell;
   background-color: #ffffff;
   border-bottom: 2px solid #e5e5e5;
@@ -41,9 +42,21 @@
 }
 
 .rates__cell-name--hit {
-  background-image: url("../../img/bg-hit-tablet.svg");
+  background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
-  background-position: 0 -3px;
+  background-position: -1px -1px;
+}
+
+.rates__hit-text {
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  width: 50px;
+  height: 25px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+  transform: rotate(-45deg);
 }
 
 .rates__cell--hidden {
@@ -82,18 +95,24 @@
 }
 
 .rates__icon-yes {
-  display: inline-block;
+  position: absolute;
+  top: 23px;
+  right: 12px;
   width: 31px;
   height: 21px;
-  background-image: url("../../img/icon-yes.svg");
-  background-repeat: no-repeat;
+}
+
+.rates__icon {
+  fill: #3dc644;
 }
 
 .rates__icon-no {
-  display: inline-block;
-  width: 27px;
-  height: 26px;
-  background-image: url("../../img/icon-no.svg");
+  position: absolute;
+  top: 16px;
+  right: 14px;
+  width: 31px;
+  height: 28px;
+  background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
 }
 
@@ -138,7 +157,7 @@
   .rates {
     width: 620px;
     padding: 87px 20px 69px 20px;
-    background-position: 0 -42px;
+    background-position: -1px -42px;
   }
 
   .rates__table {
@@ -176,6 +195,15 @@
 
   .rates__cell-name {
     position: relative;
+  }
+
+  .rates__cell-name--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .rates__hit-text {
+    left: 1px;
+    top: -4px;
   }
 
   .rates__icon-yes {
@@ -223,6 +251,16 @@
     width: 212px;
     margin: 15px 0 14px 22px;
     font-size: 18px;
+  }
+
+  .rates__cell-name--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-position: -1px -1px;
+  }
+
+  .rates__hit-text {
+    left: 6px;
+    top: 2px;
   }
 
   .rates__icon-yes {

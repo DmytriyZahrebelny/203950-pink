@@ -4,47 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Photo</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js" async></script>
   </head>
   <body class="body">
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header  header--photo">
       <nav class="nav">
         <div class="nav__close  nav__close--photo">
           <div class="nav__logo">
             <a class="nav__logo-link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg" alt="">
-              </picture>
+              <include src="build/img/icon-logo-header.svg"></include>
             </a>
           </div>
-          <div class="nav__button-open"></div>
+          <div class="nav__button-open">
+            <include src="build/img/icon-menu-burger.svg"></include>
+          </div>
         </div>
         <ul class="nav__list">
           <li class="nav__item  nav__item--main">
-            <a class="nav__link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="nav__img" src="img/logo-pink-white-mobile.svg" alt="">
-              </picture>
+            <a class="nav__link  nav__link--logo" href="#">
+              <include src="build/img/icon-logo-header.svg"></include>
             </a>
             <div class="nav__button-close">
+              <include src="build/img/icon-menu-cross.svg"></include>
             </div>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link  nav__link--active" href="#">Фотографии</a>
+            <a class="nav__link  nav__link--active">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Конкурс</a>
+            <a class="nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">HTML Academy</a>
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -154,15 +152,27 @@
         </div>
         <div class="filter__kinds">
           <div class="filter__effect">
-            <span class="filter__size-icon  filter__size-icon--size"></span>
+            <span class="filter__size-icon  filter__size-icon--size">
+              <svg class="filter__icon  filter__icon--size">
+                <use xlink:href="#icon-editor-crop"></use>
+              </svg>
+            </span>
             <span class="filter__line  filter__line--size">size line</span>
           </div>
           <div class="filter__effect">
-            <span class="filter__size-icon  filter__size-icon--filling"></span>
+            <span class="filter__size-icon  filter__size-icon--filling">
+              <svg class="filter__icon  filter__icon--filling">
+                <use xlink:href="#icon-editor-fill"></use>
+              </svg>
+            </span>
             <span class="filter__line  filter__line--filling">filling line</span>
           </div>
           <div class="filter__effect">
-            <span class="filter__size-icon  filter__size-icon--color"></span>
+            <span class="filter__size-icon  filter__size-icon--color">
+              <svg class="filter__icon  filter__icon--color">
+                <use xlink:href="#icon-editor-contrast"></use>
+              </svg>
+            </span>
             <span class="filter__line  filter__line--color">color line</span>
           </div>
         </div>
@@ -175,11 +185,7 @@
     <footer class="footer">
       <div class="footer__logo">
         <a class="footer__logo-link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-            <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="">
-          </picture>
+          <include src="build/img/icon-logo-footer.svg"></include>
         </a>
       </div>
       <div class="footer__social">
@@ -188,9 +194,13 @@
         <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
       </div>
       <div class="footer__academy">
-        <a class="footer__academy-link" href="#">Разработано</a>
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <svg class="footer__academy-icon" width="49.945px" height="24.007px">
+            <use xlink:href="#icon-logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>
-  <!-- <script src="js/picturefill.js"></script> -->
 </html>
