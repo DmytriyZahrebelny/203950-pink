@@ -1,13 +1,17 @@
 .rates {
-  position: relative;
-  width: 320px;
+  width: 100%;
   padding-top: 91px;
   margin: 0 auto;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: 0 -69px;
+  background-position: top right;
   overflow: hidden;
+}
+
+.rates__container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .rates__table {
@@ -44,13 +48,13 @@
 .rates__cell-name--hit {
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
-  background-position: -1px -1px;
+  background-position: 0 0;
 }
 
 .rates__hit-text {
   position: absolute;
-  left: 6px;
-  top: 1px;
+  left: 5px;
+  top: 4px;
   width: 50px;
   height: 25px;
   font-size: 14px;
@@ -59,7 +63,7 @@
   transform: rotate(-45deg);
 }
 
-.rates__cell--hidden {
+.rates__cell-name--hidden {
   display: none;
 }
 
@@ -118,11 +122,12 @@
 
 .rates__inputs {
   display: flex;
+  width: 57px;
   height: 12px;
+  margin: 37px auto 0;
   justify-content: space-between;
   align-items: center;
   padding: 4px 132px 47px 132px;
-  margin-top: 37px;
 }
 
 .rates__inputs:hover .rates__table-toggle {
@@ -155,9 +160,12 @@
 
 @media (min-width: 660px) {
   .rates {
+    padding-top: 87px;
+  }
+
+  .rates__container {
     width: 620px;
-    padding: 87px 20px 69px 20px;
-    background-position: -1px -42px;
+    padding: 0 20px 69px 20px;
   }
 
   .rates__table {
@@ -171,11 +179,11 @@
   }
 
   .rates__cell-cost {
-    margin: -1px 0 9px 39px;
+    margin: -2px 0 10px 39px;
     font-size: 18px;
   }
 
-  .rates__cell--hidden {
+  .rates__cell-name--hidden {
     display: block;
   }
 
@@ -231,9 +239,14 @@
 
 @media (min-width: 1200px) {
   .rates {
-    width: 942px;
-    padding: 149px 130px 96px 128px;
-    background-position: 0 0;
+    padding: 149px 0 96px 0;
+    background-position: 0 -1px;
+    background-size: 100%;
+  }
+
+  .rates__container {
+    width: 940px;
+    padding: 0 20px;
   }
 
   .rates__cell-title {
@@ -247,9 +260,13 @@
     font-size: 24px;
   }
 
+  .rates__cell-name--border {
+    border-left: 2px solid #283645;
+  }
+
   .rates__cell-text {
     width: 212px;
-    margin: 15px 0 14px 22px;
+    margin: 15px 0 14px 20px;
     font-size: 18px;
   }
 

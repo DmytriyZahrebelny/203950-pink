@@ -1,11 +1,50 @@
-var openMenu = document.querySelector('.nav__button-open');
-var closeMenu = document.querySelector('.nav__button-close');
-var menuElement = document.querySelector(".nav__list");
+var openMenuElement = document.querySelector('.nav__button-open');
+var closeMenuElement = document.querySelector('.nav__button-close');
 
-openMenu.addEventListener('click', function() {
-  menuElement.style = ('display: block');
-})
+var menu = document.querySelector('.nav__list');
+var header = document.querySelector('.header');
+var nav = document.querySelector('.nav__container');
+var headerContent = document.querySelector('.header__content');
+var navClose = document.querySelector('.nav__partial');
+var headerBanner = document.querySelector('.header__banner');
 
-closeMenu.addEventListener('click', function() {
-  menuElement.style = ('display: none');
-})
+closeMenuElement.classList.remove('nav__button-close--hidden');
+navClose.classList.remove('nav__all');
+header.classList.remove('header--menu');
+nav.classList.remove('nav__container--all-menu');
+openMenuElement.classList.remove('nav__button-hidden');
+menu.classList.add('nav__list--hidden');
+closeMenuElement.classList.add('nav__button-hidden');
+
+if (headerContent) {
+  headerContent.classList.remove('header__content--open-menu');
+  headerBanner.classList.remove('header__banner--open-menu');
+}
+
+openMenuElement.addEventListener('click', function() {
+  navClose.classList.add('nav__all');
+  header.classList.add('header--menu');
+  nav.classList.add('nav__container--all-menu');
+  openMenuElement.classList.add('nav__button-hidden');
+  menu.classList.remove('nav__list--hidden');
+  closeMenuElement.classList.remove('nav__button-hidden');
+
+  if (headerContent) {
+    headerContent.classList.add('header__content--open-menu');
+    headerBanner.classList.add('header__banner--open-menu');
+  }
+});
+
+closeMenuElement.addEventListener('click', function() {
+  navClose.classList.remove('nav__all');
+  header.classList.remove('header--menu');
+  nav.classList.remove('nav__container--all-menu');
+  openMenuElement.classList.remove('nav__button-hidden');
+  menu.classList.add('nav__list--hidden');
+  closeMenuElement.classList.add('nav__button-hidden');
+
+  if (headerContent) {
+    headerContent.classList.remove('header__content--open-menu');
+    headerBanner.classList.remove('header__banner--open-menu');
+  }
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +10,35 @@
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="header  header--photo">
-      <nav class="nav">
-        <div class="nav__close  nav__close--photo">
-          <div class="nav__logo">
-            <a class="nav__logo-link" href="#">
+    <header class="header  header--menu  header--photo">
+      <nav class="nav  nav--all-menu">
+        <div class="nav__container  nav__container--all-menu">
+          <div class="nav__partial  nav__all">
+            <a class="nav__logo" href="index.html">
               <include src="build/img/icon-logo-header.svg"></include>
             </a>
-          </div>
-          <div class="nav__button-open">
-            <include src="build/img/icon-menu-burger.svg"></include>
-          </div>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item  nav__item--main">
-            <a class="nav__link  nav__link--logo" href="#">
-              <include src="build/img/icon-logo-header.svg"></include>
-            </a>
-            <div class="nav__button-close">
+            <div class="nav__button-open  nav__button-hidden">
+              <include src="build/img/icon-menu-burger.svg"></include>
+            </div>
+            <div class="nav__button-close  nav__button-close--hidden">
               <include src="build/img/icon-menu-cross.svg"></include>
             </div>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link  nav__link--active">Конкурс</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="nav__item  nav__link--active">
+              <a class="nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="header__box">
         <h1 class="header__ad">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -152,12 +147,12 @@
           <include src="build/img/icon-logo-footer.svg"></include>
         </a>
       </div>
-      <div class="footer__social">
+      <div class="footer__social  footer__social--form">
         <a class="footer__social-link  footer__social-link--twiter" href="#"></a>
         <a class="footer__social-link  footer__social-link--facebook" href="#"></a>
         <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
       </div>
-      <div class="footer__academy">
+      <div class="footer__academy  footer__academy--form">
         <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <svg class="footer__academy-icon" width="49.945px" height="24.007px">
@@ -166,5 +161,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

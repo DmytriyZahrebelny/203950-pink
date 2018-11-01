@@ -1,6 +1,6 @@
 .footer {
   width: 280px;
-  padding: 0 20px 47px;
+  padding: 0 20px 38px;
   margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@
 
 .footer__logo-link {
   display: block;
-  width: 160px;
+  width: 147px;
   height: 40px;
   margin: 0 auto;
 }
@@ -66,7 +66,7 @@
 }
 
 .footer__academy {
-  padding: 43px 0 0 74px;
+  padding: 41px 0 0 74px;
 }
 
 .footer__academy-link {
@@ -78,6 +78,7 @@
 .footer__academy-icon {
   width: 27px;
   height: 34px;
+  margin: 0 0 0 11px;
   fill: #d22856;
   vertical-align: middle;
 }
@@ -94,7 +95,7 @@
   .footer {
     display: flex;
     width: 660px;
-    padding: 37px 0 36px 0;
+    padding: 36px 0 37px;
     margin: 0 auto;
   }
 
@@ -108,18 +109,30 @@
   }
 
   .footer__social {
-    margin: 2px 0 0 62px;
+    margin: 4px 0 0 75px;
+  }
+
+  .footer__social-link--youtube {
+    background-position: 17px 14px;
+  }
+
+  .footer__social-link--facebook {
+    background-position: 18px 10px;
   }
 
   .footer__academy {
-    padding: 13px 0 0 91px;
+    padding: 15px 0 0 91px;
+  }
+
+  .footer__academy-icon {
+    margin: 0 0 0 12px;
   }
 }
 
 @media (min-width: 1200px) {
   .footer {
     width: 1200px;
-    padding: 69px 0 36px 0;
+    padding: 69px 0 72px;
   }
 
   .footer__logo {
@@ -132,7 +145,27 @@
   }
 
   .footer__social {
-    margin: 4px 0 0 218px;
+    margin: 5px 0 0 221px;
+  }
+
+  .footer__social--photo {
+    margin: 5px 0 0 225px;
+  }
+
+  .footer__social--form {
+    margin: 4px 0 0 225px;
+  }
+
+  .footer__academy {
+    margin: 0 0 0 137px;
+  }
+
+  .footer__academy--photo {
+    margin: 0 0 0 134px;
+  }
+
+  .footer__academy--form {
+    padding: 13px 0 0 87px;
   }
 
   .footer__academy-link {
@@ -140,7 +173,7 @@
     line-height: 18px;
   }
 
-  .footer__academy {
-    margin: 1px 0 0 140px;
+  .footer__academy-icon {
+    margin: 0 0 0 10px;
   }
 }

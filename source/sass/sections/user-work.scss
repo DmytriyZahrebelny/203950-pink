@@ -49,6 +49,10 @@
   margin: 0 0 21px;
 }
 
+.user-work__data--decoration {
+  margin-bottom: 19px;
+}
+
 @media (min-width: 660px) {
   .user-work {
     display: flex;
@@ -75,8 +79,8 @@
 
   .user-work__like {
     display: block;
-    width: 120px;
-    padding: 1px 130px 0 0;
+    width: 190px;
+    padding: 1px 66px 0 0;
     background-position: 228px 6px;
   }
 }

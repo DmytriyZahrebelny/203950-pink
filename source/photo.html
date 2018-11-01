@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +11,35 @@
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="header  header--photo">
-      <nav class="nav">
-        <div class="nav__close  nav__close--photo">
-          <div class="nav__logo">
-            <a class="nav__logo-link" href="#">
+    <header class="header  header--menu  header--photo">
+      <nav class="nav  nav--all-menu">
+        <div class="nav__container  nav__container--all-menu">
+          <div class="nav__partial  nav__all">
+            <a class="nav__logo" href="index.html">
               <include src="build/img/icon-logo-header.svg"></include>
             </a>
-          </div>
-          <div class="nav__button-open">
-            <include src="build/img/icon-menu-burger.svg"></include>
-          </div>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item  nav__item--main">
-            <a class="nav__link  nav__link--logo" href="#">
-              <include src="build/img/icon-logo-header.svg"></include>
-            </a>
-            <div class="nav__button-close">
+            <div class="nav__button-open  nav__button-hidden">
+              <include src="build/img/icon-menu-burger.svg"></include>
+            </div>
+            <div class="nav__button-close  nav__button-close--hidden">
               <include src="build/img/icon-menu-cross.svg"></include>
             </div>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link  nav__link--active">Фотографии</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link  nav__link--active" href="#">Фотографии</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="header__box">
         <h1 class="header__text">Фотографии пользователей</h1>
@@ -98,7 +93,7 @@
             <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
             <img class="user-work__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="">
           </picture>
-          <div class="user-work__data">
+          <div class="user-work__data  user-work__data--decoration">
             <span class="user-work__time"><b class="user-work__user-name">Борис</b> (12 часов назад)</span>
             <p class="user-work__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <span class="user-work__like">Нравится: 215</span>
@@ -141,46 +136,52 @@
           </div>
         </div>
       </section>
-      <section class="filter">
-        <h2 class="filter__title"><span class="filter__subtitle">Затмите их всех!</span> Выкладывайте все, что накопилось в телефоне!</h2>
-        <div class="filter__img">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img class="user-work__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="">
-          </picture>
+      <div class="filter">
+        <div class="filter__text">
+          <h2 class="filter__title"><span class="filter__subtitle">Затмите их всех!</span> Выкладывайте все, что накопилось в телефоне!</h2>
         </div>
-        <div class="filter__kinds">
-          <div class="filter__effect">
-            <span class="filter__size-icon  filter__size-icon--size">
-              <svg class="filter__icon  filter__icon--size">
-                <use xlink:href="#icon-editor-crop"></use>
-              </svg>
-            </span>
-            <span class="filter__line  filter__line--size">size line</span>
+        <div class="filter__container">
+          <div class="filter__img">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="filter__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="">
+            </picture>
           </div>
-          <div class="filter__effect">
-            <span class="filter__size-icon  filter__size-icon--filling">
-              <svg class="filter__icon  filter__icon--filling">
-                <use xlink:href="#icon-editor-fill"></use>
-              </svg>
-            </span>
-            <span class="filter__line  filter__line--filling">filling line</span>
+          <div class="filter__kinds">
+            <div class="filter__effect">
+              <span class="filter__size-icon  filter__size-icon--size">
+                <svg class="filter__icon  filter__icon--size">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
+              </span>
+              <span class="filter__line  filter__line--size">size line</span>
+            </div>
+            <div class="filter__effect">
+              <span class="filter__size-icon  filter__size-icon--filling">
+                <svg class="filter__icon  filter__icon--filling">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+              </span>
+              <span class="filter__line  filter__line--filling">filling line</span>
+            </div>
+            <div class="filter__effect">
+              <span class="filter__size-icon  filter__size-icon--color">
+                <svg class="filter__icon  filter__icon--color">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
+              </span>
+              <span class="filter__line  filter__line--color">color line</span>
+            </div>
           </div>
-          <div class="filter__effect">
-            <span class="filter__size-icon  filter__size-icon--color">
-              <svg class="filter__icon  filter__icon--color">
-                <use xlink:href="#icon-editor-contrast"></use>
-              </svg>
-            </span>
-            <span class="filter__line  filter__line--color">color line</span>
+          <div class="filter__inputs">
+            <form action="https://echo.htmlacademy.ru">
+              <button class="filter__input" type="submit"><span class="filter__input-text">Запостить</span></button>
+              <button class="filter__input  filter__input--cancel" type="submit"><span class="filter__input-cancel">Отмена</span></button>
+            </form>
           </div>
         </div>
-        <div class="filter__inputs">
-          <button class="filter__input" type="submit"><span class="filter__input-text">Запостить</span></button>
-          <button class="filter__input  filter__input--cancel" type="submit"><span class="filter__input-text--cancel">Отмена</span></button>
-        </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__logo">
@@ -188,12 +189,12 @@
           <include src="build/img/icon-logo-footer.svg"></include>
         </a>
       </div>
-      <div class="footer__social">
+      <div class="footer__social  footer__social--photo">
         <a class="footer__social-link  footer__social-link--twiter" href="#"></a>
         <a class="footer__social-link  footer__social-link--facebook" href="#"></a>
         <a class="footer__social-link  footer__social-link--youtube" href="#"></a>
       </div>
-      <div class="footer__academy">
+      <div class="footer__academy  footer__academy--photo">
         <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <svg class="footer__academy-icon" width="49.945px" height="24.007px">
@@ -202,5 +203,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

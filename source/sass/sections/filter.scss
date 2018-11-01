@@ -1,10 +1,22 @@
 .filter {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.filter__text {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.filter__container {
   width: 320px;
   margin: 0 auto;
 }
 
 .filter__title {
-  margin: 41px 0 44px 0;
+  width: 265px;
+  padding: 21px 0 44px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   font-weight: 500;
@@ -16,8 +28,7 @@
 }
 
 .filter__img {
-  background-color: #f2f2f2;
-  padding: 20px 22px 41px 18px;
+  padding: 19px 22px 41px 18px;
 }
 
 .filter__user-img {
@@ -28,7 +39,6 @@
   display: flex;
   justify-content: space-between;
   padding: 0 55px 75px;
-  background-color: #f2f2f2;
   border-bottom: 1px solid #dddfe0;
 }
 
@@ -50,9 +60,10 @@
 }
 
 .filter__icon--filling {
-  width: 48px;
-  height: 43px;
+  width: 46px;
+  height: 56px;
   fill: #b5b9be;
+  margin: -4px 0 0 -3px;
 }
 
 .filter__icon--filling:hover {
@@ -107,7 +118,6 @@
 
 .filter__inputs {
   padding: 39px 0 28px 18px;
-  background-color: #f2f2f2;
 }
 
 .filter__input {
@@ -150,13 +160,17 @@
   background-color: #b5b9be;
 }
 
-.filter__input--cancel:active .filter__input-text--cancel {
+.filter__input--cancel:active .filter__input-cancel {
   color: #ffffff;
   opacity: 0.3;
 }
 
+.filter__picture {
+  display: block;
+}
+
 @media (min-width: 660px) {
-  .filter {
+  .filter__container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +179,7 @@
 
   .filter__title {
     width: 100%;
-    margin: 46px 0 70px 0;
+    padding: 46px 0 70px;
     font-size: 18px;
   }
 
@@ -213,11 +227,13 @@
   .filter__icon--filling {
     width: 24px;
     height: 22px;
+    margin: 4px 0 0;
   }
 
   .filter__icon--color {
     width: 16px;
     height: 16px;
+    margin: 5px 0 0 4px;
   }
 
   .filter__line {
@@ -256,23 +272,23 @@
 }
 
 @media (min-width: 1200px) {
-  .filter {
+  .filter__container {
     width: 940px;
     margin-bottom: 28px;
   }
 
   .filter__title {
-    width: 940px;
-    margin: 7px 0 65px 0;
+    margin: 7px 0 56px;
+    padding: 0 0 66px;
   }
 
   .filter__img {
-    padding: 57px 89px 58px 80px;
+    padding: 0 89px 58px 80px;
   }
 
   .filter__kinds {
     width: 382px;
-    padding: 56px 89px 243px 0;
+    padding: 0 89px 243px 0;
   }
 
   .filter__effect::after {
@@ -295,17 +311,20 @@
   .filter__icon--size {
     width: 44px;
     height: 44px;
+    margin: -2px 0 0 1px;
     fill: #d22856;
   }
 
   .filter__icon--filling {
-    width: 48px;
-    height: 43px;
+    width: 51px;
+    height: 46px;
+    margin: 1px 0 0 -1px;
   }
 
   .filter__icon--color {
     width: 32px;
     height: 32px;
+    margin: 4px 0 0 7px;
   }
 
   .filter__line {
