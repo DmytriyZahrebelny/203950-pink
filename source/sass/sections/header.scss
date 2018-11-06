@@ -66,14 +66,12 @@
   text-align: center;
 }
 
+.header__text--title {
+  padding: 97px 0 0 0;
+}
+
 .header__ad {
-  margin: 31px auto 0 auto;
   width: 280px;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 200;
-  color: #ffffff;
-  text-align: center;
 }
 
 .header__button {
@@ -226,11 +224,12 @@
     line-height: 60px;
   }
 
+  .header__text--title {
+    padding: 179px 0 0 0;
+  }
+
   .header__ad {
     width: 475px;
-    margin: 69px auto 0 auto;
-    font-size: 50px;
-    line-height: 60px;
   }
 
   .header__button {
@@ -314,9 +313,12 @@
     margin: 62px auto 0 auto;
   }
 
+  .header__text--title {
+    padding: 0;
+  }
+
   .header__ad {
     width: 755px;
-    margin: 62px auto 0 auto;
   }
 
   .header__button {
